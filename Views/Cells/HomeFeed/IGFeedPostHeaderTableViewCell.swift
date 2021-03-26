@@ -9,7 +9,7 @@ import UIKit
 
 class IGFeedPostHeaderTableViewCell: UITableViewCell {
 
-<<<<<<< Updated upstream
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -20,7 +20,5 @@ class IGFeedPostHeaderTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-=======
->>>>>>> Stashed changes
 
 }

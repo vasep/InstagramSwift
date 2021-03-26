@@ -9,7 +9,6 @@ import UIKit
 
 class IGFeedPostGeneralTableViewCell: UITableViewCell {
 
-<<<<<<< Updated upstream
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -20,7 +19,4 @@ class IGFeedPostGeneralTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-=======
->>>>>>> Stashed changes
-
 }

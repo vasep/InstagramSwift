@@ -17,11 +17,6 @@ final class IGFeedPostTableViewCell: UITableViewCell {
 
     public func configure() {
         //configure the cell
-<<<<<<< Updated upstream
-        
-        
-=======
->>>>>>> Stashed changes
     }
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
