@@ -23,8 +23,10 @@ final class ProfileViewController: UIViewController {
         layout.itemSize = CGSize(width: view.width/3, height: view.width/3)
         collectionView = UICollectionView(frame: .zero,
                                           collectionViewLayout: layout)
+        
         collectionView?.delegate = self
         collectionView?.dataSource = self
+        collectionView?.backgroundColor = .systemBackground
         guard let collectionView = collectionView else {
             return
         }

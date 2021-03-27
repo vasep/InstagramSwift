@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		33100F4625E16D670064CFC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33100F4525E16D670064CFC4 /* AppDelegate.swift */; };
 		33100F4825E16D670064CFC4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33100F4725E16D670064CFC4 /* SceneDelegate.swift */; };
-		33100F4A25E16D670064CFC4 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33100F4925E16D670064CFC4 /* TabBarController.swift */; };
+		33100F4A25E16D670064CFC4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33100F4925E16D670064CFC4 /* HomeViewController.swift */; };
 		33100F4D25E16D670064CFC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33100F4B25E16D670064CFC4 /* Main.storyboard */; };
 		33100F4F25E16D690064CFC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33100F4E25E16D690064CFC4 /* Assets.xcassets */; };
 		33100F5225E16D690064CFC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33100F5025E16D690064CFC4 /* LaunchScreen.storyboard */; };
@@ -36,7 +36,6 @@
 		3387D81025EC5F6A00F7BFAA /* IGFeedPostHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3387D80F25EC5F6A00F7BFAA /* IGFeedPostHeaderTableViewCell.swift */; };
 		3387D81425EC5F8500F7BFAA /* IGFeedPostActionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3387D81325EC5F8500F7BFAA /* IGFeedPostActionsTableViewCell.swift */; };
 		3387D81725EC5F9D00F7BFAA /* IGFeedPostGeneralTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3387D81625EC5F9D00F7BFAA /* IGFeedPostGeneralTableViewCell.swift */; };
-		33BF6AFA260CA2A600E879D7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BF6AF9260CA2A600E879D7 /* HomeViewController.swift */; };
 		EE318F4C92AF42401C3B9297 /* Pods_Instagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA688C0D422F4DEE5501187E /* Pods_Instagram.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,7 +43,7 @@
 		33100F4225E16D670064CFC4 /* Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33100F4525E16D670064CFC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		33100F4725E16D670064CFC4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		33100F4925E16D670064CFC4 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		33100F4925E16D670064CFC4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		33100F4C25E16D670064CFC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		33100F4E25E16D690064CFC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		33100F5125E16D690064CFC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -72,7 +71,6 @@
 		3387D80F25EC5F6A00F7BFAA /* IGFeedPostHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGFeedPostHeaderTableViewCell.swift; sourceTree = "<group>"; };
 		3387D81325EC5F8500F7BFAA /* IGFeedPostActionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGFeedPostActionsTableViewCell.swift; sourceTree = "<group>"; };
 		3387D81625EC5F9D00F7BFAA /* IGFeedPostGeneralTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGFeedPostGeneralTableViewCell.swift; sourceTree = "<group>"; };
-		33BF6AF9260CA2A600E879D7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		3A08B7302594BA7554A47461 /* Pods-Instagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram.release.xcconfig"; path = "Target Support Files/Pods-Instagram/Pods-Instagram.release.xcconfig"; sourceTree = "<group>"; };
 		3D298D1C96352936FC4BB018 /* Pods-Instagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram.debug.xcconfig"; path = "Target Support Files/Pods-Instagram/Pods-Instagram.debug.xcconfig"; sourceTree = "<group>"; };
 		CA688C0D422F4DEE5501187E /* Pods_Instagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -172,12 +170,11 @@
 		33100F9425E171A50064CFC4 /* Core Tabs */ = {
 			isa = PBXGroup;
 			children = (
-				33100F4925E16D670064CFC4 /* TabBarController.swift */,
+				33100F4925E16D670064CFC4 /* HomeViewController.swift */,
 				33100F8025E170A80064CFC4 /* ExploreViewController.swift */,
 				33100F8525E171100064CFC4 /* CameraViewController.swift */,
 				33100F8A25E171250064CFC4 /* NotificationViewController.swift */,
 				33100F8F25E1713C0064CFC4 /* ProfileViewController.swift */,
-				33BF6AF9260CA2A600E879D7 /* HomeViewController.swift */,
 			);
 			path = "Core Tabs";
 			sourceTree = "<group>";
@@ -377,8 +374,7 @@
 				3371FE6525E283A100530A11 /* StorageManager.swift in Sources */,
 				33100FA825E174190064CFC4 /* PostViewController.swift in Sources */,
 				3371FE5F25E282AD00530A11 /* DatabaseManager.swift in Sources */,
-				33BF6AFA260CA2A600E879D7 /* HomeViewController.swift in Sources */,
-				33100F4A25E16D670064CFC4 /* TabBarController.swift in Sources */,
+				33100F4A25E16D670064CFC4 /* HomeViewController.swift in Sources */,
 				3387D80B25EC5D2200F7BFAA /* IGFeedPostTableViewCell.swift in Sources */,
 				33100FC125E1747A0064CFC4 /* SearchResultViewController.swift in Sources */,
 				33100F9B25E173F50064CFC4 /* LoginViewController.swift in Sources */,
