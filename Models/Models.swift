@@ -18,6 +18,7 @@ struct User {
     let gener: Gener
     let counts: UserCount
     let joinDate: Date
+    let profilePhoto: URL
 }
 
 struct UserCount {
