@@ -37,7 +37,7 @@ class HomeViewController: UITabBarController{
     }
     
     private func createMockModels() {
-        let user = User(username: "joe",
+        let user = User(username: "@joe",
                         bio: "",
                         name: (first: "", last: ""),
                         gener: .male,
@@ -155,6 +155,8 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             case .header(let user):
                 let cell = tableView.dequeueReusableCell(withIdentifier: IGFeedPostHeaderTableViewCell.identifier, for: indexPath)
                     as! IGFeedPostHeaderTableViewCell
+                cell.configure(with: user)
+                cell.delegate = self
                 return cell
             case .comments, .actions, .primaryContent: return UITableViewCell()
             }
@@ -164,6 +166,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             case .primaryContent(let post):
                 let cell = tableView.dequeueReusableCell(withIdentifier: IGFeedPostTableViewCell.identifier, for: indexPath)
                     as! IGFeedPostTableViewCell
+                cell.configure(with: post)
                 return cell
             case .comments, .actions, .header: return UITableViewCell()
             }
@@ -222,5 +225,20 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         
         return subSection == 3 ? 70 : 0
         return 0
+    }
+}
+
+extension HomeViewController: IGFeedPostHeaderTableViewCellDelegate {
+    func didTapMoreButton() {
+        let actionSheet = UIAlertController(title: "Post Options", message: nil, preferredStyle: .actionSheet)
+        actionSheet.addAction(UIAlertAction(title: "Report Post", style: .destructive, handler: {[weak self] _ in
+            self?.reportPost()
+        }))
+        actionSheet.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        present(actionSheet, animated: true)
+    }
+    
+    func reportPost(){
+        
     }
 }
